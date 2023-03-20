@@ -1,0 +1,19 @@
+name: DADA-SR2
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - pip
+  - pytorch=1.10
+  - torchvision=0.11
+  - cudatoolkit=11.3
+  - h5py=3.3
+  - wandb
+  - scikit-image=0.18.3
+  - pip:
+    - setuptools==59.5.0
+    - configargparse
+    - segmentation-models-pytorch==0.2
+    - tqdm

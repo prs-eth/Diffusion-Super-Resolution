@@ -1,0 +1,80 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "train: Middlebury, x8",
+            "type": "python",
+            "request": "launch",
+            "program": "run_train.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args":[
+                "--dataset", "Middlebury",
+                "--data-dir", "/scratch2/metzgern/DEQ_TTO/data/",
+                "--save-dir", "./save_dir/" ,
+                "--wandb",
+                "--num-epochs", "4500",
+                "--scaling", "8",
+                "--val-every-n-epochs", "10",
+                "--lr-step", "100",
+                "--in-memory"
+            ]
+        },
+        {
+            "name": "test: Middlebury, x8",
+            "type": "python",
+            "request": "launch",
+            "program": "run_eval.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args":[
+                "--dataset", "Middlebury",
+                "--data-dir", "./datafolder/",
+                "--checkpoint", "./save_dir/experiment_<...>/best_model.pth",
+                // "--checkpoint", "./save_dir/Middlebury/experiment_1_288/best_model.pth",
+                "--scaling", "32",
+            ]
+        },
+        {
+            "name": "train: NYUv2, x8",
+            "type": "python",
+            "request": "launch",
+            "program": "run_train.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args":[
+                "--dataset", "NYUv2",
+                "--data-dir", "./datafolder/",
+                "--save-dir", "./save_dir/" ,
+                "--wandb",
+                "--num-epochs", "550",
+                "--scaling", "8",
+                "--val-every-n-epochs", "4",
+                "--lr-step", "10",
+                "--in-memory"
+            ]
+        },
+        {
+            "name": "train: DIML, x8",
+            "type": "python",
+            "request": "launch",
+            "program": "run_train.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args":[
+                "--dataset", "DIML",
+                "--data-dir", "./datafolder/",
+                "--save-dir", "./save_dir/" ,
+                "--wandb",
+                "--num-epochs", "300",
+                "--scaling", "8",
+                "--val-every-n-epochs", "2",
+                "--lr-step", "6",
+                "--in-memory"
+            ]
+        }
+    ]
+}
