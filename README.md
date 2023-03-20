@@ -79,7 +79,7 @@ python run_train.py -h
 For test set evaluation, run
 
 ```bash
-python run_eval.py --dataset Middlebury --data-dir ./datafolder/ --checkpoint ./save_dir/experiment_<...>/best_model.pth --scaling <...>
+python run_eval.py --dataset <...> --data-dir ./datafolder/ --checkpoint ./save_dir/experiment_<...>/best_model.pth --scaling <...>
 ```
 Again, you can query all available options by running 
 ```bash
