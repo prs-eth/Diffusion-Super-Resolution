@@ -12,7 +12,7 @@ Performing super-resolution of a depth image using the guidance from an RGB imag
 
 ## Setup 🛠️
 
-### Dependencies 
+### Dependencies 🐍💓
 We recommend creating a new conda environment with all required dependencies by running
 ```bash
 conda env create -f environment.yml
@@ -29,8 +29,6 @@ Your folder structure should look like this:
 datafolder
 │
 └───Middlebury
-│   │   file011.txt
-│   │   file012.txt
 │   │
 │   └───2005
 │   │   └───Art
@@ -58,8 +56,8 @@ datafolder
 
 ```
 
-### Checkpoints
-Our pretrained model checkpoints will be provided in the final version of the paper.
+### Checkpoints 🚩
+Our pretrained model checkpoints can be downloaded [here](https://drive.google.com/file/d/1pfJ94vkDl6OQQ4QYItRxEbEjPhalrs_5/view?usp=share_link).
 
 ## Training 🏋️
 
