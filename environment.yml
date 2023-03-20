@@ -1,4 +1,4 @@
-name: DADA-SR2
+name: DADA-SR
 channels:
   - pytorch
   - conda-forge
