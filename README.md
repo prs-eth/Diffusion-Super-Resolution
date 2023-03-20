@@ -9,20 +9,18 @@ Performing super-resolution of a depth image using the guidance from an RGB imag
 
 ![Teaser](images/teaser_new.png)
 
-## Abstract
 
+## Setup 🛠️
 
-## Setup
-
-### Dependencies
+### Dependencies 
 We recommend creating a new conda environment with all required dependencies by running
 ```bash
 conda env create -f environment.yml
 conda activate DADA-SR
 ```
 
-### Data
-To reproduce our results, create a data directory (e.g. `./data`) with the three datasets:
+### Data 💾
+To reproduce our results, create a data directory (e.g. `./datafolder`) with the three datasets:
 * **Middlebury**: Download the 2005-2014 scenes (full size, two-view) from [[here]](https://vision.middlebury.edu/stereo/data/) and place the extracted scenes in `./datafolder/Middlebury/<year>/<scene>`. For the 2005 dataset, make sure to only put the scenes for which ground truth is available. The data splits are defined in code.
 * **NYUv2**: Download the labeled dataset from [[here]](https://cs.nyu.edu/~silberman/datasets/nyu_depth_v2.html) and place the `nyu_depth_v2_labeled.mat` in `./datafolder/NYU Depth v2`, the split file is already provided in this repository under `data/split_idc_NYU`.
 * **DIML**: Download the indoor data sample from [[here]](https://dimlrgbd.github.io) and extract it into `./data/DIML/{train,test}` respectively. Then run `python scripts/create_diml_npy.py ./datafolder/DIML` to create numpy binary files for faster data loading.
@@ -63,7 +61,7 @@ datafolder
 ### Checkpoints
 Our pretrained model checkpoints will be provided in the final version of the paper.
 
-## Training
+## Training 🏋️
 
 Run the training script via
 ```bash
@@ -78,20 +76,19 @@ Hyperparameter defaults are set to the values from the paper. Depending on the d
 python run_train.py -h
 ```
 
-## Evaluation
+## Testing 🧪
 
 For test set evaluation, run
 
 ```bash
-python run_eval.py --checkpoint <...> --dataset <...> --data-dir <...>
-python run_eval.py --dataset Middlebury --data-dir ./datafolder/ --checkpoint ./save_dir/experiment_<...>/best_model.pth --scaling <...> --batch-size 32 
+python run_eval.py --dataset Middlebury --data-dir ./datafolder/ --checkpoint ./save_dir/experiment_<...>/best_model.pth --scaling <...>
 ```
 Again, you can query all available options by running 
 ```bash
 python run_eval.py -h
 ```
 
-## Citation
+## Citation 🎓
 
 
 ```
