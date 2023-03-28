@@ -27,9 +27,7 @@ To reproduce our results, create a data directory (e.g. `./datafolder`) with the
 Your folder structure should look like this:
 ```
 datafolder
-│
 └───Middlebury
-│   │
 │   └───2005
 │   │   └───Art
 │   │   |   |   disp1.png
