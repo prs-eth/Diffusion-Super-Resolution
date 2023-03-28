@@ -67,7 +67,7 @@ python run_train.py --dataset DIML --data-dir ./datafolder/ --save-dir ./save_di
 ```
 or use the prepared setups in ```.vscode/launch.json```. 
 
-Hyperparameter defaults are set to the values from the paper. Depending on the dataset, you have to adjust the number of epochs (`--num-epochs`) and the scheduler step size (`--lr-step`), see appendix A of the paper. You can see all available training options by running 
+Note, that depending on the dataset, you have to adjust the number of epochs (`--num-epochs`) and the scheduler step size (`--lr-step`), as listed in the commands above. You can see all available training options by running 
 ```bash
 python run_train.py -h
 ```
