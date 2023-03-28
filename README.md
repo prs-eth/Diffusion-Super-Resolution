@@ -10,16 +10,16 @@ Performing super-resolution of a depth image using the guidance from an RGB imag
 ![Teaser](images/teaser_new.png)
 
 
-## Setup 🛠️
+## 🛠️ Setup
 
-### Dependencies 🐍💓
+### 🐍💓 Dependencies
 We recommend creating a new conda environment with all required dependencies by running
 ```bash
 conda env create -f environment.yml
 conda activate DADA-SR
 ```
 
-### Data 💾
+### 💾🦌 Data
 To reproduce our results, create a data directory (e.g. `./datafolder`) with the three datasets:
 * **Middlebury**: Download the 2005-2014 scenes (full size, two-view) from [[here]](https://vision.middlebury.edu/stereo/data/) and place the extracted scenes in `./datafolder/Middlebury/<year>/<scene>`. For the 2005 dataset, make sure to only put the scenes for which ground truth is available. The data splits are defined in code.
 * **NYUv2**: Download the labeled dataset from [[here]](https://cs.nyu.edu/~silberman/datasets/nyu_depth_v2.html) and place the `nyu_depth_v2_labeled.mat` in `./datafolder/NYU Depth v2`, the split file is already provided in this repository under `data/split_idc_NYU`.
@@ -54,10 +54,10 @@ datafolder
 
 ```
 
-### Checkpoints 🚩
+### 🚩💾 Checkpoints
 Our pretrained model checkpoints can be downloaded [here](https://drive.google.com/file/d/1pfJ94vkDl6OQQ4QYItRxEbEjPhalrs_5/view?usp=share_link).
 
-## Training 🏋️
+## 🏋️ Training
 
 Run the training script via
 ```bash
@@ -72,7 +72,7 @@ Note, that depending on the dataset, you have to adjust the number of epochs (`-
 python run_train.py -h
 ```
 
-## Testing 🧪
+## 🧪 Testing
 
 For test set evaluation, run
 
@@ -84,7 +84,7 @@ Again, you can query all available options by running
 python run_eval.py -h
 ```
 
-## Citation 🎓
+## 🎓 Citation
 
 ```
 @article{metzger2022guided,
