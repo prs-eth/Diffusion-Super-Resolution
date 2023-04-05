@@ -1,10 +1,19 @@
-# <p style="text-align: center;"> [Guided Depth Super-Resolution by Deep Anisotropic Diffusion](https://arxiv.org/abs/2211.11592) [CVPR2023] </p>
+<p align="center">
+<h2 align="center"> Guided Depth Super-Resolution by Deep Anisotropic Diffusion [CVPR2023] </h2>
 
-#### <p style="text-align: center;">  __[Nando Metzger](https://nandometzger.github.io/)\*, [Rodrigo Caye Daudt](https://rcdaudt.github.io/)\*, [Konrad Schindler](https://igp.ethz.ch/personen/person-detail.html?persid=143986)__ </p>
+<p align="center">
+    <a href="https://nandometzger.github.io/"><strong>Nando Metzger</strong></a>*,
+    <a href="https://rcdaudt.github.io/"><strong>Rodrigo Caye Daudt</strong></a>*,
+    <a href="https://igp.ethz.ch/personen/person-detail.html?persid=143986"><strong>Konrad Schindler</strong></a>
+</p>
 
-{nando.metzger, rodrigo.cayedaudt, schindler}@ethz.ch; *Equal Contribution; Photogrammetry and Remote Sensing, ETH Zürich
-
-
+<p align="center">
+{nando.metzger, rodrigo.cayedaudt, schindler}@ethz.ch, Equal Contribution; Photogrammetry and Remote Sensing, ETH Zürich
+</p>
+<p align="center">
+<a href="https://arxiv.org/abs/2211.11592"><strong>Read the Paper</strong></a>
+</p>
+  
 Performing super-resolution of a depth image using the guidance from an RGB image is a problem that concerns several fields, such as robotics, medical imaging, and remote sensing. While deep learning methods have achieved good results in this problem, recent work highlighted the value of combining modern methods with more formal frameworks. In this work we propose a novel approach which combines guided anisotropic diffusion with a deep convolutional network and advances the state of the art for guided depth super-resolution. The edge transferring/enhancing properties of the diffusion are boosted by the contextual reasoning capabilities of modern networks, and a strict adjustment step guarantees perfect adherence to the source image. We achieve unprecedented results in three commonly used benchmarks for guided depth super resolution. The performance gain compared to other methods is the largest at larger scales, such as x32 scaling. Code for the proposed method will be made available to promote reproducibility of our results.
 
 ![Teaser](images/teaser_new.png)
