@@ -13,7 +13,7 @@
             "justMyCode": true,
             "args":[
                 "--dataset", "Middlebury",
-                "--data-dir", "/scratch2/metzgern/DEQ_TTO/data/",
+                "--data-dir", "./datafolder/",
                 "--save-dir", "./save_dir/" ,
                 "--wandb",
                 "--num-epochs", "4500",
