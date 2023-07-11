@@ -75,6 +75,22 @@
                 "--lr-step", "6",
                 "--in-memory"
             ]
+        },
+        {
+            "name": "eval: DIML, x4",
+            "type": "python",
+            "request": "launch",
+            "program": "run_eval.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args":[
+                // "--checkpoint", "./save_dir/experiment_<...>/best_model.pth",
+                // "--checkpoint", "/net/pf-pc40/scratch2/metzgern/DEQ_TTO/data/Middlebury/save_dir/euler_dir/DIML/experiment_46_648/best_model.pth",
+                "--checkpoint", "/scratch2/metzgern/Downloads/Checkpoints/DIML, x4/best_model.pth",
+                "--dataset", "DIML",
+                "--data-dir", "/scratch2/metzgern/DEQ_TTO/data/", 
+                "--scaling", "4",
+            ]
         }
     ]
 }

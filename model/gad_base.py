@@ -49,6 +49,8 @@ class GADBase(nn.Module):
             source += deps
             sample['y_bicubic'] += deps
             shifted = True
+        else:
+            shifted = False
 
         y_pred, aux = self.diffuse(sample['y_bicubic'].clone(), guide.clone(), source, mask_lr < 0.5,
                  K=torch.exp(self.logk), verbose=False, train=train)
