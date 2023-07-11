@@ -59,7 +59,8 @@ class GADBase(nn.Module):
         if shifted:
             y_pred -= deps
 
-        return {'y_pred': y_pred} | aux
+        # return {'y_pred': y_pred} | aux
+        return {**{'y_pred': y_pred}, **aux}
 
 
     def diffuse(self, img, guide, source, mask_inv,
