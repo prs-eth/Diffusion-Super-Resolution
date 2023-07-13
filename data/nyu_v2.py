@@ -41,7 +41,7 @@ class NYUv2Dataset(Dataset):
         import h5py
         file = h5py.File(Path(data_dir) / 'nyu_depth_v2_labeled.mat')
 
-        with open('data' / 'split_idc_nyuv2.json') as fh: # might want to change the location of that file later
+        with open(Path('data') / 'split_idc_nyuv2.json') as fh: # might want to change the location of that file later
             self.split_idc = np.array(json.load(fh)[split])
 
         if max_rotation_angle > 0 and crop_deterministic:
