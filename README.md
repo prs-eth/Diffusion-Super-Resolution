@@ -14,7 +14,11 @@
 *Equal Contribution
 </p>
 <p align="center">
-<a href="https://arxiv.org/abs/2211.11592"><strong>Read the Paper</strong></a>
+[<a href="https://arxiv.org/abs/2211.11592"><strong>Paper</strong></a>]
+[<a href="https://www.youtube.com/watch?v=7RgXJz_3kcg"><strong>Video</strong></a>]
+[<a href="https://rcdaudt.github.io/dada/"><strong>Project Page</strong></a>]
+[<a href="https://openaccess.thecvf.com/content/CVPR2023/html/Metzger_Guided_Depth_Super-Resolution_by_Deep_Anisotropic_Diffusion_CVPR_2023_paper.html"><strong>Proceeding</strong></a>]
+[<a href="https://drive.google.com/file/d/1xHmnH5F0ckmtB7OLWYtQ6oPF7oo79m8l/view?usp=sharing"><strong>Poster</strong></a>]
 </p>
   
 Performing super-resolution of a depth image using the guidance from an RGB image is a problem that concerns several fields, such as robotics, medical imaging, and remote sensing. While deep learning methods have achieved good results in this problem, recent work highlighted the value of combining modern methods with more formal frameworks. In this work we propose a novel approach which combines guided anisotropic diffusion with a deep convolutional network and advances the state of the art for guided depth super-resolution. The edge transferring/enhancing properties of the diffusion are boosted by the contextual reasoning capabilities of modern networks, and a strict adjustment step guarantees perfect adherence to the source image. We achieve unprecedented results in three commonly used benchmarks for guided depth super resolution. The performance gain compared to other methods is the largest at larger scales, such as x32 scaling. Code for the proposed method will be made available to promote reproducibility of our results.
