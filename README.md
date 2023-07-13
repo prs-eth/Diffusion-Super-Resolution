@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-{nando.metzger, rodrigo.cayedaudt, schindler}@ethz.ch, Photogrammetry and Remote Sensing, ETH Zürich
+{metzgern, rodrigo.cayedaudt, schindler}@ethz.ch, Photogrammetry and Remote Sensing, ETH Zürich
 </p>
 <p align="center">
 *Equal Contribution
