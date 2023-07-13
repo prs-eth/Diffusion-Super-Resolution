@@ -38,6 +38,6 @@ parser.add_argument('--gradient-clip', type=float, default=0.01, help='If > 0, c
 parser.add_argument('--no-opt', action='store_true', help='Don\'t optimize')
 
 # model
-parser.add_argument('--feature-extractor', type=str, default='UNet', help='Feature extractor for edge potentials') 
+parser.add_argument('--feature-extractor', type=str, default='UNet', help="Feature extractor for edge potentials. 'none' for the unlearned version.") 
 parser.add_argument('--Npre', type=int, default=8000, help='N learned iterations, but without gradients')
 parser.add_argument('--Ntrain', type=int, default=1024, help='N learned iterations with gradients')
