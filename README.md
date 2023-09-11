@@ -111,3 +111,6 @@ python run_eval.py -h
   year={2022}
 }
 ```
+
+## 🙏 Acknowledgement
+ - A big thank you to the authors of the [Learned Graph Regularizer](https://github.com/prs-eth/graph-super-resolution) for providing the code framework.
